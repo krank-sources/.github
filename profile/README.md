@@ -26,7 +26,7 @@ Each source dataset is processed using a combination of automated and manual mer
 
 The dream reports are adjusted as needed to pass the following checks:
 
-* ✅ Strict UTF-8 encoding (e.g., no mojibake) fixes applied with [ftfy](https://github.com/rspeer/python-ftfy))
+* ✅ Strict UTF-8 encoding (e.g., no mojibake) (fixes applied with [ftfy](https://github.com/rspeer/python-ftfy))
 * ✅ Simplified UTF-8 encoding (e.g., no curly quotes) (fixes applied with [ftfy](https://github.com/rspeer/python-ftfy))
 * ✅ No extraneous surrounding whitespace
 * ✅ No extraneous surrounding quotes
