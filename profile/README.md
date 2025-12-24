@@ -15,6 +15,33 @@ the Python package [Krank](https://github.com/remrama/krank).
 
 ---
 
+<h2 align="center">Curation</h2>
+
+Each source dataset is processed using a combination of automated and manual merges, conversions, checks, and corrections.
+
+* If dream reports are included across multiple individual files, they are merged into a single csv file.
+* If dream reports have associated metadata in other files, the metadata and dream reports are merged into a single csv file.
+* If dream reports are included in a much larger source file, they are extracted out for easier access.
+* If source files are in a non-csv format, they are converted to csv.
+
+The dream reports are adjusted as needed to pass the following checks:
+
+* ✅ Strict UTF-8 encoding (e.g., no mojibake) fixes applied with [ftfy](https://github.com/rspeer/python-ftfy))
+* ✅ Simplified UTF-8 encoding (e.g., no curly quotes) (fixes applied with [ftfy](https://github.com/rspeer/python-ftfy))
+* ✅ No extraneous surrounding whitespace
+* ✅ No extraneous surrounding quotes
+* ✅ No empty cells
+* ✅ No extreme word lengths (unless sensible)
+* ✅ No duplicated dream reports (unless sensible)
+* ✅ General quality inspection
+
+The metadata, if present, is adjusted as needed to pass the following checks:
+
+* ✅ No derived columns (i.e., those with values derivable from another column)
+* ✅ No categorical values represented as integers
+* ✅ Sensible values (e.g., typos, positive age values)
+* ✅ Consistency across authors
+
 <h2 align="center">Versioning</h2>
 
 Datasets in this collection **use only a single number to denote their versions**.
