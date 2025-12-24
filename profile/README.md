@@ -1,12 +1,17 @@
-<h1 align="center">Krank data collection</h1>
+<h1 align="center">Krank sources collection</h1>
 
+This organization houses a curated collection of dream-report datasets.
 
-This organization houses a curated collection of datasets related to sleep,
-dreams, and cognition.
+Each repository here contains Python code that downloads, inspects, preprocesses,
+and repackages the dream reports into a single cleaned and validated csv file.
 
-Each repository here contains Python code that downloads,
-preprocesses, and repackages text and/or neuroscientific data.
-The curated data are then published as GitHub release artifacts.
+The output datasets are accessible through the GitHub release artifacts or
+the Python package [Krank](https://github.com/remrama/krank).
+
+> [!NOTE]
+> **Credits:** The structure and underlying code of this GitHub organization and its repositories are modeled heavily after the [Fatiando a Terra FAIR data collection](https://github.com/fatiando-data). This overall project would not be possible without other products from the [Fatiando a Terra Project](https://www.fatiando.org), namely [Pooch](https://www.github.com/fatiando/pooch) for data access and [Ensaio](https://www.github.com/fatiando/ensaio) as inspiration for the broader [Krank](https://github.com/remrama/krank) project.
+> 
+> > Uieda, L., V. C. Oliveira Jr, and V. C. F. Barbosa (2013), Modeling the Earth with Fatiando a Terra, _Proceedings of the 12th Python in Science Conference_, pp. 91-98. doi:[10.25080/Majora-8b375195-010](https://doi.org/10.25080/Majora-8b375195-010)
 
 ---
 
